@@ -3,7 +3,7 @@ var fs = require('fs');
 var app = express.createServer(express.logger());
 
 var buffer = new Buffer(27);
-fs.readFile('/etc/passwd', function (err, data) {
+fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   buffer = data;
 });
